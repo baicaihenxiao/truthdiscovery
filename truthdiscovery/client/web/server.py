@@ -223,7 +223,7 @@ def get_flask_app():
 
 
 def run_debug_server():  # pragma: no cover
-    app.run(host="0.0.0.0", debug=True)
+    app.run(host="127.0.0.1", port=8000, debug=True)
 
 
 app = get_flask_app()

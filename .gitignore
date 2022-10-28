@@ -19,3 +19,4 @@ truthdiscovery/examples/stock/truth/*.tsv
 reports/papers
 *.toc
 dist/*
+.idea
