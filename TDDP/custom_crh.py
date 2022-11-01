@@ -83,7 +83,7 @@ if __name__ == '__main__':
     # dataset = np.array([[1, 2, 3], [4, 5, 10]])
     # initial_weights = np.array([0.4, 0.6])
     dataset = SyntheticDataset.generate_dataset(100, 5)
-    initial_weights = SyntheticDataset.generate_init_weights(100)
+    initial_weights = SyntheticDataset.generate_rand_init_weights(100)
     LOG.info("dataset = %s" % dataset)
     crh = CustomCrh()
     crh.fit(dataset, initial_weights)
