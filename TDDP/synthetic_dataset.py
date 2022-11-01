@@ -9,6 +9,10 @@ class SyntheticDataset:
 
 
     @staticmethod
-    def generate_init_weights(num_of_sources):
+    def generate_rand_init_weights(num_of_sources):
         return np.random.random(num_of_sources)
+
+    @staticmethod
+    def generate_uniform_init_weights(num_of_sources):
+        return np.full((1, num_of_sources), 1/num_of_sources)
 
